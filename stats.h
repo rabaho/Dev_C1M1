@@ -24,17 +24,88 @@
 /* Add Your Declarations and Function Comments here */ 
 
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief Prints the statistics of an unsigned char array.
  *
- * <Add Extended Description Here>
- *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- *
- * @return <Add Return Informaiton here>
+ * This function prints the minimum, maximum, mean, and 
+ * median of an array to the screen.
  */
+void print_statistics();
+
+/**
+ * @brief Prints an unsigned char array to the screen
+ *
+ * This function takes a fixed size array and prints 
+ * it to the screen
+ *
+ * @param array The array to be printed to the screen
+ * @param length The length of the array.
+ *
+ */
+void print_array(unsigned char* array, unsigned int length);
+
+/**
+ * @brief Find the median of an unsigned char array
+ *
+ * This function takes a fixed size array and
+ * computes its median
+ *
+ * @param array The array to be perform computation on
+ * @param length The length of the array.
+ *
+ * @return The median of the array
+ */
+unsigned char find_median(unsigned char* array, unsigned int length);
+
+/**
+ * @brief Find the mean of an unsigned char array
+ *
+ * This function takes a fixed size array and
+ * computes its mean
+ *
+ * @param array The array to be perform computation on
+ * @param length The length of the array.
+ *
+ * @return The mean of the array
+ */
+unsigned char find_mean(unsigned char* array, unsigned int length);
+
+/**
+ * @brief Find the maximum of an unsigned char array
+ *
+ * This function takes a fixed size array and
+ * finds its maximum
+ *
+ * @param array The array to compute maximum on
+ * @param length The length of the array.
+ *
+ * @return The maximum of the array
+ */
+unsigned char find_maximum(unsigned char* array, unsigned int length);
+
+/**
+ * @brief Find the minimum of an unsigned char array
+ *
+ * This function takes a fixed size array and
+ * finds its minimum
+ *
+ * @param array The array to compute minimum on
+ * @param length The length of the array.
+ *
+ * @return The minimum of the array
+ */
+unsigned char find_minimum(unsigned char* array, unsigned int length);
+
+/**
+ * @brief Sort an unsigned array from largest to smallest
+ *
+ * This function takes a fixed size array and
+ * sorts it's content from largest to smallest
+ *
+ * @param array The array to sort
+ * @param length The length of the array.
+ *
+ */
+void sort_array(unsigned char* array, unsigned int length);
 
 
 #endif /* __STATS_H__ */

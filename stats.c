@@ -9,13 +9,13 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.c
+ * @brief A simple application that performs statistical analytics on a dataset
  *
- * <Add Extended Description Here>
+ * A set of function that performs statistical computation on a set of data.
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Rabah Ouldnoughi
+ * @date 07/27/2020
  *
  */
 
@@ -37,6 +37,41 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
+
+}
+
+void print_statistics()
+{
+
+}
+
+void print_array(unsigned char* array, unsigned int length)
+{
+
+}
+
+unsigned char find_median(unsigned char* array, unsigned int length)
+{
+
+}
+
+unsigned char find_mean(unsigned char* array, unsigned int length)
+{
+
+}
+
+unsigned char find_maximum(unsigned char* array, unsigned int length)
+{
+
+}
+
+unsigned char find_minimum(unsigned char* array, unsigned int length)
+{
+
+}
+
+void sort_array(unsigned char* array, unsigned int length)
+{
 
 }
 
