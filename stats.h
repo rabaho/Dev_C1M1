@@ -28,6 +28,10 @@
  *
  * This function prints the minimum, maximum, mean, and 
  * median of an array to the screen.
+ * @param mean the mean of the array
+ * @param median the median of the array
+ * @param maximum of the array
+ * @param minimum of the array
  */
 void print_statistics(unsigned char mean, unsigned char median, unsigned char maximum, unsigned char minimum);
 
