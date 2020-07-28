@@ -56,10 +56,10 @@ void main() {
 
 void print_statistics(unsigned char mean, unsigned char median, unsigned char maximum, unsigned char minimum) {
   printf("/----------Array Stats---------/\n");
-  printf("  Mean    is %d\n", mean);
-  printf("  Median  is %d\n", median);
-  printf("  maximum is %d\n", maximum);
-  printf("  minimum is %d\n", minimum);
+  printf("  Array Mean    is %d\n", mean);
+  printf("  Array Median  is %d\n", median);
+  printf("  Array Maximum is %d\n", maximum);
+  printf("  Array Minimum is %d\n", minimum);
   printf("/------------------------------/\n");
 }
 
