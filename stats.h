@@ -29,7 +29,7 @@
  * This function prints the minimum, maximum, mean, and 
  * median of an array to the screen.
  */
-void print_statistics();
+void print_statistics(unsigned char mean, unsigned char median, unsigned char maximum, unsigned char minimum);
 
 /**
  * @brief Prints an unsigned char array to the screen
@@ -106,6 +106,18 @@ unsigned char find_minimum(unsigned char* array, unsigned int length);
  *
  */
 void sort_array(unsigned char* array, unsigned int length);
+
+/**
+ * @brief Swap two unsigned char values
+ *
+ * This function takes two unsignbed chars 
+ * and swap their values
+ *
+ * @param c1 the first character
+ * @param c2 the second character
+ *
+ */
+void swap (unsigned char* c1, unsigned char* c2);
 
 
 #endif /* __STATS_H__ */
