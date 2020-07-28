@@ -41,32 +41,30 @@ void main() {
                                 7,  87, 250, 230,  99,   3, 100,  90};
 
   /* Other Variable Declarations Go Here */
-  unsigned char mean = 0, median = 0, max = 0, min = 0;
-
   /* Statistics and Printing Functions Go Here */
-  mean = find_mean(test, SIZE);
-  median = find_median(test, SIZE);
-  max = find_maximum(test, SIZE);
-  min = find_minimum(test, SIZE);
+  print_statistics(test, SIZE);
+  printf("Sorted Array:\n");
   print_array(test, SIZE);
-  print_statistics(mean, median, max, min);
 }
 
 /* Add other Implementation File Code Here */
 
-void print_statistics(unsigned char mean, unsigned char median, unsigned char maximum, unsigned char minimum) {
-  printf("/----------Array Stats---------/\n");
-  printf("  Array Mean    is %d\n", mean);
-  printf("  Array Median  is %d\n", median);
-  printf("  Array Maximum is %d\n", maximum);
-  printf("  Array Minimum is %d\n", minimum);
-  printf("/------------------------------/\n");
+void print_statistics(unsigned char* array, unsigned int length) {
+  unsigned char mean = 0, median = 0, max = 0, min = 0;
+  mean = find_mean(array, SIZE);
+  median = find_median(array, SIZE);
+  max = find_maximum(array, SIZE);
+  min = find_minimum(array, SIZE);
+
+  printf("\nThe mean of the array is %d\n", mean);
+  printf("The median of the array is %d\n", median);
+  printf("the maximum of the array is %d\n", max);
+  printf("the minimum of the array is %d\n\n", min);
 }
 
 void print_array(unsigned char* array, unsigned int length)
 {
   unsigned int i;
-  printf("Array Size: %d\n", length);
 
   for(i=0; i < length; ++i) {
     printf("Array[%d] = %d\n", i, array[i]);
